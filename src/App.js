@@ -1,7 +1,7 @@
 import React from 'react';
 import './sass/App.scss';
-import { useSelector } from ' react-redux'
-import { selectDarkMode } from './features/counter/themeSlice';
+import { useSelector } from 'react-redux'
+import { selectDarkMode } from './features/Slices/themeSlice';
 
 import Todos from './components/Todos';
 
@@ -10,13 +10,11 @@ const App = () => {
 const darkMode = useSelector(selectDarkMode)
 
   return (
-    
-      <div className={`app ${darkMode ? 'whiteBg' : ''}`} >
-        <div className="header">
+      <div className={`app ${!darkMode ? 'whiteBg' : ''}`} >
+        <div className={`header ${!darkMode ? 'whiteBg' : ''}`}>
         </div>
         <Todos />
       </div>
-    
   )
 }
 
