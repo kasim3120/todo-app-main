@@ -74,7 +74,7 @@ const Todos = () => {
 	if(showActiveTodos) {
 		todosToRender = activeTodos
 	}
-	else if(showCompletedTodos``){
+	else if(showCompletedTodos){
 		todosToRender = completedTodos
 	}
 	else{
