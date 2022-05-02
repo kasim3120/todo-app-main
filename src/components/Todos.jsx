@@ -91,7 +91,7 @@ const Todos = () => {
 		<div className='todos'>
 			
 			<div className="todosHeader">
-				<h1>TODOS</h1>
+				<h1>TODO</h1>
 				{darkMode ? 
 				(<img src={sunIcon} alt='' onClick={() => dispatch(toggleTheme())} />)
 				:
