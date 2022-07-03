@@ -21,8 +21,6 @@ import { showAllFunction } from '../features/Slices/todosSlice'
 import { showActiveFunction } from '../features/Slices/todosSlice' 
 import { showCompletedFunction } from '../features/Slices/todosSlice'
 
-
-
 const Todos = () => {
 
 	const inputRef=useRef()
@@ -100,7 +98,7 @@ const Todos = () => {
 			</div>
 			
 			<div className="inputContainer">
-				<div className="circle"></div>
+				<div className="circle" />
 				<form onSubmit={submitTodo}>
 					<input 
 						className={!darkMode ? 'whiteBg' : ''}
@@ -122,16 +120,16 @@ const Todos = () => {
 						key = {todo.id}
 						id = {todo.id}
 						completed = {todo.completed}
-				/>
-			)}
+					/>
+				)}
 				
 			<div className={`todosFooter ${!darkMode ? 'whiteBg': ''}`}>
 				<p>{activeTodosNumber} items left</p>
 					<div className="types">
 						<div className="types">
-						<p className={`clear ${showTodos ? 'active' : ''}`} onClick={showAllHandler}>All</p>
-						<p className={`clear ${showActiveTodos ? 'active' : ''}`} onClick={showActiveHandler}>Active</p>
-						<p className={`clear ${showCompletedTodos ? 'active' : ''}`} onClick={showCompletedHandler}>Completed</p>
+							<p className={`clear ${showTodos ? 'active' : ''}`} onClick={showAllHandler}>All</p>
+							<p className={`clear ${showActiveTodos ? 'active' : ''}`} onClick={showActiveHandler}>Active</p>
+							<p className={`clear ${showCompletedTodos ? 'active' : ''}`} onClick={showCompletedHandler}>Completed</p>
 						</div>
 					</div>
 					<p className="clear" onClick={clearCompletedHandler}>Clear completed</p>
