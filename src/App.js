@@ -11,8 +11,7 @@ const darkMode = useSelector(selectDarkMode)
 
   return (
       <div className={`app ${!darkMode ? 'whiteBg' : ''}`} >
-        <div className={`header ${!darkMode ? 'whiteBg' : ''}`}>
-        </div>
+        <div className={`header ${!darkMode ? 'whiteBg' : ''}`} />
         <Todos />
       </div>
   )
