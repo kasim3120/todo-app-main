@@ -50,7 +50,6 @@ const Todos = () => {
 			}))
 		}
 	inputRef.current.value = ''
-	console.log(todosToRender)
 }
 
 	const showCompletedHandler = () => {
