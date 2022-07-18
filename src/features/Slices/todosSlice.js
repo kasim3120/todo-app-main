@@ -15,6 +15,7 @@ export const todosSlice = createSlice({
   reducers: {
     addTodo: (state, action) => {
       state.todos.push(action.payload)
+      state.activeTodos.push(action.payload)
     },
 
     completedTodo: (state, action) => {
