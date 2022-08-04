@@ -1,10 +1,9 @@
-import React,{useRef} from 'react'
+import React, {useRef} from 'react'
 import moonIcon from '../images/icon-moon.svg'
 import sunIcon from '../images/icon-sun.svg'
 import Todo from './Todo'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { selectDarkMode, toggleTheme } from '../features/Slices/themeSlice'
-import { useDispatch } from 'react-redux'
 
 import {
 	selectTodos,
